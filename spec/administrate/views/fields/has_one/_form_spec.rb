@@ -24,6 +24,7 @@ describe "fields/has_one/_form", type: :view do
       block.call(double("Fields For Form Builder"))
     end
     allow(builder).to receive(:object_name).and_return(:product)
+    allow(builder).to receive(:label).and_return("Meta")
     builder
   end
 
